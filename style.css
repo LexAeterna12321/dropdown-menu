@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-image: url(https://cdn.pixabay.com/photo/2018/07/28/19/57/lunar-eclipse-3568835_960_720.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: .7;
+    transition: .4s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #3f3f3f;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+nav .hiddenMenu {
+    height: 0;
+    position: absolute;
+    margin-top: 10px;
+    opacity: 0;
+    color: floralwhite;
+    font-size: 1.5rem;
+    display: block;
+    transition: 1.2s;
+    overflow: hidden;
+}
+
+.hiddenMenu li {
+    margin: 10px 20px;
+    padding-right: 10px;
+    opacity: .7;
+}
+
+.hiddenMenu li:hover {
+    opacity: 1;
+    border-right: 2px solid goldenrod;
+}
+
+nav .navToggled {
+    opacity: .7;
+    height: 200px;
+}

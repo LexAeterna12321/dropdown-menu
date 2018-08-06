@@ -8,10 +8,10 @@
 
 body,
 html {
-    background-image: url(https://cdn.pixabay.com/photo/2018/07/28/19/57/lunar-eclipse-3568835_960_720.jpg);
+    background-image: url("http://cdn.pixabay.com/photo/2018/07/28/19/57/lunar-eclipse-3568835_960_720.jpg");
     background-size: cover;
+    background-position: center center;
     height: 100vh;
-    font-size: 16px;
     font-family: 'Montserrat',
     sans-serif;
 }
@@ -49,6 +49,8 @@ nav ul li a:hover {
     opacity: 1;
     transform: scale(1.1);
 }
+
+.fas{padding-left:10px;}
 
 nav .hiddenMenu {
     height: 0;
